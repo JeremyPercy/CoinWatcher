@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CoinWatcher">
+    <output-path>$PROJECT_DIR$/out/artifacts/CoinWatcher</output-path>
+    <root id="archive" name="CoinWatcher.jar" />
+  </artifact>
+</component>

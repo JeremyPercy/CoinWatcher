@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserController" prefWidth="1300" prefHeight="750">
+    <ImageView fitHeight="450.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+        <image>
+            <Image url="@../assets/images/logo.png"/>
+        </image>
+    </ImageView>
+    <Label text="Welcome to Coin Watcher please enter your name:" GridPane.rowIndex="2"/>
+    <TextField fx:id="userName" promptText="Type your name" GridPane.rowIndex="3"/>
+
+    <Label text="Please enter your Public API and Secret Key: " GridPane.rowIndex="4"/>
+    <TextField fx:id="publicKey" promptText="Type your Public API Key" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <TextField fx:id="privateKey" promptText="Type your Secret Key" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+    <Button text="Confirm" fx:id="register" GridPane.rowIndex="7" onAction="#registerUser" defaultButton="true"/>
+</GridPane>

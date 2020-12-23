@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.GridPane?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1">
+    <AnchorPane id="AnchorPane" GridPane.rowIndex="1">
+        <Label AnchorPane.leftAnchor="0" text="Hallo, ik ben Jeremy Batten"/>
+        <ImageView AnchorPane.leftAnchor="0"  AnchorPane.topAnchor="50" fitHeight="450.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+            <image>
+                <Image url="@../assets/images/JeremyBatten.png"/>
+            </image>
+        </ImageView>
+        <Label AnchorPane.leftAnchor="500" text="Hoi, mijn naam is An Truong"/>
+        <ImageView AnchorPane.leftAnchor="500" AnchorPane.topAnchor="50" fitHeight="450.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+            <image>
+                <Image url="@../assets/images/AnTruong.png"/>
+            </image>
+        </ImageView>
+    </AnchorPane>
+    <Label maxWidth="1000" wrapText="true" GridPane.rowIndex="2">
+        <text>Samen zijn wij twee ontwikkelaars in opleiding aan de Hogeschool Avans.
+            Voor het eerste periode van jaar 2 hebben wij als opdracht gekregen om applicatie in Java te maken. Hierin hadden we een keuze,
+            of we een vooraf gedefineerde opdracht zouden maken, of we verzinnen zelf een applicatie. Zoals je kan zien hebben we voor het
+            laatste gekozen.</text>
+    </Label>
+    <Label maxWidth="1000" wrapText="true" GridPane.rowIndex="3">
+        <text>Wanneer je in de crypto currency zit, kan het wel eens voorkomen dat je bij verschillende exchanges meerdere portofolio's hebt opgebouwd.
+            CoinWatchers is een Java applicatie die weergeeft welke Cryptomunten je in bezit hebt bij verschillende exchanges zodat je je overzicht kan behouden</text>
+    </Label>
+</GridPane>

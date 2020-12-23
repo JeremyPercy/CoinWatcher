@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.UserController"
+            prefHeight="400.0" prefWidth="600.0" alignment="CENTER">
+
+    <Label text="Change your API connection:" GridPane.rowIndex="2"/>
+    <Label text="Api key: " GridPane.rowIndex="4"/>
+    <TextField fx:id="updatePublicKey" promptText="Enter your Public API Key" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <Label text="Secret Key: " GridPane.rowIndex="7"/>
+    <TextField fx:id="updatePrivateKey" promptText="Enter your Secret Key" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
+    <Button text="Confirm" fx:id="updateConfirm" GridPane.rowIndex="10" onAction="#updateUser" defaultButton="true"/>
+    <Button text="Delete User" GridPane.rowIndex="12" onAction="#deleteUser" />
+
+</GridPane>

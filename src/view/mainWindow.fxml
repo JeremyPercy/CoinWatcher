@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewController">
+        <MenuBar VBox.vgrow="NEVER">
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Export portfolio" onAction="#exportPortofolioCoins" />
+                        <MenuItem mnemonicParsing="false" text="Preferences…" onAction="#showPreferencesAction"/>
+                        <SeparatorMenuItem mnemonicParsing="false"/>
+                        <MenuItem mnemonicParsing="false" text="Quit" onAction="#closeProgram" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="About">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Help"/>
+                        <MenuItem mnemonicParsing="false" text="About" onAction="#aboutUsAction" />
+                    </items>
+                </Menu>
+        </MenuBar>
+        <AnchorPane fx:id="rootPane" VBox.vgrow="ALWAYS">
+            <children>
+                <Label alignment="CENTER" style="&#10;"
+                       text="No component is loaded" textAlignment="CENTER" textFill="#9f9f9f"
+                       wrapText="false">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+</VBox>

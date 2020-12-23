@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.effect.Blend?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.PreferencesController"
+            prefHeight="-900" prefWidth="1400">
+    <left>
+        <VBox fx:id="leftMenu" minHeight="1000" minWidth="-Infinity" layoutX="50">
+            <Button onAction="#loadWallet" mnemonicParsing="false" prefHeight="36.0"
+                    prefWidth="300.0" text="Return to the wallet">
+            </Button>
+            <Button onAction="#loadPreferenceWindow" mnemonicParsing="false" prefHeight="36.0"
+                    prefWidth="300.0" text="Update export path">
+            </Button>
+            <Button onAction="#loadUpdateUserWindow" mnemonicParsing="false" prefHeight="36.0" prefWidth="300.0" text="Update user API">
+            </Button>
+        </VBox>
+    </left>
+    <center>
+        <AnchorPane fx:id="preferenceMainPane">
+            <children>
+                <Label alignment="CENTER" style="&#10;"
+                       text="Set your preference, choose your option on the left." textAlignment="CENTER" textFill="#9f9f9f"
+                       wrapText="false">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
+

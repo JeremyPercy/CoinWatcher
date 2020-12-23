@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WalletController" prefWidth="1300"
+            prefHeight="750">
+    <top>
+        <GridPane alignment="CENTER">
+            <ImageView fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true"
+                       BorderPane.alignment="CENTER" GridPane.rowIndex="1">
+                <BorderPane.margin>
+                    <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"/>
+                </BorderPane.margin>
+                <Image url="@../assets/images/logo.png"/>
+            </ImageView>
+            <Label fx:id="welcomeUser" GridPane.rowIndex="2" BorderPane.alignment="CENTER" textAlignment="CENTER" prefHeight="50" prefWidth="450">
+                <BorderPane.margin>
+                    <Insets bottom="0" left="25.0" right="25.0" top="25.0"/>
+                </BorderPane.margin>
+            </Label>
+        </GridPane>
+    </top>
+    <left>
+    </left>
+    <center>
+        <TableView fx:id="coinTable" prefHeight="-Infinity"
+                   prefWidth="-Infinity" xmlns:fx="http://javafx.com/fxml/1"
+                   xmlns="http://javafx.com/javafx/10.0.1" BorderPane.alignment="CENTER" onMouseClicked="#loadChart">
+            <BorderPane.margin>
+                <Insets bottom="10" left="25.0" right="25.0" top="10"/>
+            </BorderPane.margin>
+            <columns>
+                <TableColumn text="exchange" fx:id="exchange" prefWidth="150" />
+                <TableColumn text="balance" fx:id="balance" prefWidth="150"/>
+                <TableColumn text="currency" fx:id="currency" prefWidth="150"/>
+                <TableColumn text="available" fx:id="available" prefWidth="150"/>
+                <TableColumn text="pending" fx:id="pending" prefWidth="150"/>
+                <TableColumn text="value in BTC" fx:id="valueBTC" prefWidth="150"/>
+                <!--<TableColumn text="value in USD" fx:id="valueEUR" prefWidth="130"/>-->
+<!--                <TableColumn text="Created at" fx:id="createdat" prefWidth="320"/>-->
+                <TableColumn text="Updated at" fx:id="updatedat" prefWidth="330"/>
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <Label text="Developed by Jeremy and An, all rights reserved. Coin Watcher." fx:id="copyright" BorderPane.alignment="CENTER"
+               minHeight="10" minWidth="69"/>
+    </bottom>
+</BorderPane>
